@@ -4,6 +4,15 @@ package com.walderman.guitartools;
 public class Chord {
 
     private String chordName;
+
+    private Note root;
+    private Note second;
+    private Note third;
+    private Note fourth;
+    private Note fifth;
+    private Note sixth;
+    private Note seventh;
+
     private Fret lowestFret;
     private Fret string1Fret; // High E string
     private Fret string2Fret; // B string
@@ -15,6 +24,9 @@ public class Chord {
     public Chord() {
     }
 
+    public Chord(ChordType chordType){
+
+    }
     // create a chord. Pass the name of a chord along with the fret position for each string
     // starting from the high E (thinnest)
     public Chord(String chordName, Fret string1, Fret string2, Fret string3, Fret string4, Fret string5, Fret string6) {
@@ -26,8 +38,6 @@ public class Chord {
         this.string5Fret = string5;
         this.string6Fret = string6;
     }
-
-
 
     // Takes a guitar string as an argument.
     // Returns the fret value for that string
