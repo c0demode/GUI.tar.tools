@@ -1,18 +1,18 @@
 package com.walderman.guitartools;
 
 public enum Note {
-    A("A"),
     Ab("Ab"),
-    B("B"),
+    A("A"),
     Bb("Bb"),
+    B("B"),
     C("C"),
-    D("D"),
     Db("Db"),
-    E("E"),
+    D("D"),
     Eb("Eb"),
+    E("E"),
     F("F"),
-    G("G"),
-    Gb("Gb");
+    Gb("Gb"),
+    G("G");
 
     private String name;
     Note(String note) {

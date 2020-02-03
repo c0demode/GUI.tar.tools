@@ -10,7 +10,7 @@ public enum GuitarString {
 
     private final int stringNum;
 
-    private GuitarString(int stringNum) {
+    GuitarString(int stringNum) {
         this.stringNum = stringNum;
     }
 

@@ -24,7 +24,18 @@ public class Chord {
     public Chord() {
     }
 
-    public Chord(ChordType chordType){
+    // Take a ChordType and a root note
+    // Assign the notes belonging in the chord according to music theory
+    // I need to add functionality to the Note enum to get the next note.
+    // It needs to support 'circling' back around to the A note if we reach the end.
+    public Chord(ChordType chordType, Note rootNote){
+        switch(chordType){
+            case MAJOR:
+                chordName = rootNote.getName() + " Major";
+                root = rootNote;
+                int iThird = rootNote.ordinal() + 2;
+                third = Note.values()[iThird];
+        }
 
     }
     // create a chord. Pass the name of a chord along with the fret position for each string
