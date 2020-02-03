@@ -28,6 +28,7 @@ public class Chord {
     // Assign the notes belonging in the chord according to music theory
     // I need to add functionality to the Note enum to get the next note.
     // It needs to support 'circling' back around to the A note if we reach the end.
+    // may want to review this: https://stackoverflow.com/questions/17006239/whats-the-best-way-to-implement-next-and-previous-on-an-enum-type
     public Chord(ChordType chordType, Note rootNote){
         switch(chordType){
             case MAJOR:
